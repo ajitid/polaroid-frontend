@@ -27,7 +27,8 @@ export default {
   }),
   methods: {
     ...mapMutations(["setAccessToken"]),
-    logout() {
+    async logout() {
+      await this.$api.post("/auth/logout");
       this.setAccessToken(null);
       this.$router.push("/account/login");
     }

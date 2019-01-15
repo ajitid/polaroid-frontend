@@ -63,7 +63,13 @@ export default {
         });
         const { token } = res.data;
         this.setAccessToken(token);
-        this.$router.push("/");
+
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has("next")) {
+          this.$router.push(urlParams.get("next"));
+        } else {
+          this.$router.push("/");
+        }
       } catch (e) {
         if (e.response && e.response.status === 401) {
           this.formError = "Invalid username or password";
