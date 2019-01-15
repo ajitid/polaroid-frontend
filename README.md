@@ -1,4 +1,6 @@
-# frontend
+<h1 align="center">
+  <img src="logo.png" alt="Polaroid" />
+</h1>
 
 ## Project setup
 ```
