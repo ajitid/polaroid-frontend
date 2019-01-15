@@ -1,7 +1,12 @@
 {
   "name": "polaroid-frontend",
   "version": "0.1.0",
-  "private": true,
+  "author": "Ajit Singh <ajit.singh2905@gmail.com>",
+  "keywords": [
+    "vue",
+    "instagram-clone",
+    "frontend"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
